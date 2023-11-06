@@ -175,18 +175,18 @@ class PyRenju(QMainWindow, Ui_MainWindow):
                 self.replay_menu(winner=winner)
 
     def save_db(self):
-        self.cur.execute("CREATE TABLE IF NOT EXISTS Matrix (matrix TEXT, move INTEGER)")
+        self.cur.execute("CREATE TABLE IF NOT EXISTS Moves (matrix TEXT, move INTEGER)")
 
-        self.cur.execute(f"INSERT INTO Matrix VALUES (?, ?)", (str(self.boardmtrx), self.move))
+        self.cur.execute(f"INSERT INTO Moves VALUES (?, ?)", (str(self.boardmtrx), self.move))
         self.conn.commit()
 
         self.load_db()
 
     def load_db(self):
-        self.cur.execute("CREATE TABLE IF NOT EXISTS Matrix (matrix TEXT, move INTEGER)")
+        self.cur.execute("CREATE TABLE IF NOT EXISTS Moves (matrix TEXT, move INTEGER)")
         self.conn.commit()
-        self.move = len(list(self.cur.execute("SELECT * FROM Matrix").fetchall()))
-        data = list(self.cur.execute("SELECT * FROM Matrix").fetchall())
+        self.move = len(list(self.cur.execute("SELECT * FROM Moves").fetchall()))
+        data = list(self.cur.execute("SELECT * FROM Moves").fetchall())
 
         if data:
             self.boardmtrx = ast.literal_eval(data[-1][0])
@@ -212,7 +212,7 @@ class PyRenju(QMainWindow, Ui_MainWindow):
         history_button = self.sender()
         self.boardmtrx = history_button.value
         self.move = history_button.move
-        self.cur.execute(f'DELETE FROM matrix WHERE move > {self.move}')
+        self.cur.execute(f'DELETE FROM Moves WHERE move > {self.move}')
         self.conn.commit()
         self.render_board()
 
@@ -297,7 +297,7 @@ class PyRenju(QMainWindow, Ui_MainWindow):
     def reset(self):
         self.boardmtrx = [['' for _ in range(SIZE)] for _ in range(SIZE)]
         self.turn = False
-        self.cur.execute("DELETE FROM matrix")
+        self.cur.execute("DELETE FROM Moves")
         self.conn.commit()
         self.Turn.setPixmap(QIcon('icons/stones/black.svg').pixmap(30, 30))
 
@@ -410,6 +410,11 @@ class PyRenju(QMainWindow, Ui_MainWindow):
 
 
 if __name__ == "__main__":
+    print("""\x1b[31m=================================================\x1b[0m
+\x1b[32mThis program was created with \x1b[0m\x1b[31m♡\x1b[0m\x1b[32m by \x1b[0m\x1b[34mFlamesC0der\x1b[0m
+
+https://github.com/FlamesC0der/PyRenju\x1b[0m
+\x1b[31m=================================================\x1b[0m""")
     app = QApplication(sys.argv)
     ex = PyRenju()
     ex.show()

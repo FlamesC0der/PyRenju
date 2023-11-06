@@ -7,9 +7,14 @@
 </div>
 
 <h2></h2>
+
 <p>Renju game using PyQt6</p>
 
-<a href=""><h2>RU Description</h2></a>
+<a href="https://github.com/FlamesC0der/PyRenju/blob/master/description.md"><h2>RU Description</h2></a>
+
+<h2></h2>
+
+![alt text](screenshots/main.png)
 
 <h2></h2>
 <h2>Features</h2>

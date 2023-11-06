@@ -11,7 +11,7 @@ from PyQt6.QtCore import Qt, pyqtSignal
 
 from components.ToggleButton import ToggleButton
 
-from Renju.ui.ui import Ui_MainWindow, Ui_AboutPage, Ui_Settings
+from PyRenju.ui.ui import Ui_MainWindow, Ui_AboutPage, Ui_Settings
 
 SIZE = 15
 
@@ -47,7 +47,7 @@ class SettingsPage(QWidget, Ui_Settings):
         self.update_settings.emit('botV2', on_off)
 
 
-class Renju(QMainWindow, Ui_MainWindow):
+class PyRenju(QMainWindow, Ui_MainWindow):
     def __init__(self):
         super().__init__()
         self.setupUi(self)
@@ -411,6 +411,6 @@ class Renju(QMainWindow, Ui_MainWindow):
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
-    ex = Renju()
+    ex = PyRenju()
     ex.show()
     sys.exit(app.exec())

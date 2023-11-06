@@ -22,23 +22,23 @@
 
 * #### Главное окно
 
-![alt text](screenshots/main.png)
+![Главное окно](screenshots/main.png)
 
 * #### Главное окно 2
 
-![alt text](screenshots/main_1.png)
+![alt Главное окно](screenshots/main_1.png)
 
 * #### Главное окно 3
 
-![alt text](screenshots/main_2.png)
+![alt Главное окно](screenshots/main_2.png)
 
 * #### Страница About
 
-![alt text](screenshots/about.png)
+![Страница About](screenshots/about.png)
 
 * #### страница Настроек
 
-![alt text](screenshots/settings.png)
+![страница Настроек](screenshots/settings.png)
 
 <h2>Библиотеки</h2>
 

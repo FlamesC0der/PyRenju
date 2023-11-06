@@ -1,4 +1,4 @@
-<h1>PyRenju</h1>
+# PyRenju
 <p>Qt project yandex lyceum</p>
 
 <div id="badges">
@@ -6,18 +6,17 @@
   <a href="https://github.com/FlamesC0der/discord-bot-template/blob/master/LICENSE"><img src="https://img.shields.io/github/license/FlamesC0der/PyRenju?color=red"/></a>
 </div>
 
-<h2></h2>
+##
 
 <p>Renju game using PyQt6</p>
 
-<a href="https://github.com/FlamesC0der/PyRenju/blob/master/description.md"><h2>RU Description</h2></a>
+## [RU Description](https://github.com/FlamesC0der/PyRenju/blob/master/description.md)
 
-<h2></h2>
+##
 
 ![alt text](screenshots/main.png)
 
-<h2></h2>
-<h2>Features</h2>
+## Features
 
 * Bot
 * multiplayer
@@ -26,7 +25,7 @@
 * Icons
 * About page
 
-<h2>Installation</h2>
+## Installation
 
 * Install using
 ```

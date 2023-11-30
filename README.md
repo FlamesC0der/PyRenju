@@ -2,8 +2,8 @@
 <p>Qt project yandex lyceum</p>
 
 <div id="badges">
-  <a href="https://github.com/FlamesC0der/discord-bot-template/stargazers"><img src="https://img.shields.io/github/stars/FlamesC0der/PyRenju"/></a>
-  <a href="https://github.com/FlamesC0der/discord-bot-template/blob/master/LICENSE"><img src="https://img.shields.io/github/license/FlamesC0der/PyRenju?color=red"/></a>
+  <a href="https://github.com/FlamesC0der/PyRenju/stargazers"><img src="https://img.shields.io/github/stars/FlamesC0der/PyRenju"/></a>
+  <a href="https://github.com/FlamesC0der/PyRenju/blob/master/LICENSE"><img src="https://img.shields.io/github/license/FlamesC0der/PyRenju?color=red"/></a>
 </div>
 
 ##
